@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torrevieja</title>
+<style>
+
+    body {
+        background-image: linear-gradient(#FCF5E2 ,#FECB75);
+    }
+
+    h1 {
+        color: #FD5C5A;
+        font-size: 34px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 48px;
+        margin: 1;  
+        text-align: center;
+    }
+
+    h2 {
+        color: #FECB75;
+        font-size: 27px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 15px;
+        margin: 0;  
+        text-align: center;
+    }
+
+    p {
+        color:#4CC2C0;
+        font-size: 18px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 0,5px;
+        margin: 1;  
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+        border-radius: 340px;
+        width: 240px;
+        height: 240px;
+    }
+
+    button {
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        background-color:#FD5C5A;
+        border: 1px solid #FD5C5A;
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+    }
+
+    button:hover {
+        color:#FD5C5A;
+        background: #FECB75;
+        
+    }
+
+    .shadowbox {
+        font-size: 10px;
+        text-align:right;
+        width: 20em;
+        border: 3px solid #FD5C5A;
+        border-radius: 20px;
+        box-shadow: 8px 8px 5px #FD5C5A;
+        padding: 8px 10px;
+        background-image: linear-gradient(180deg,#FECB75,#FECB75 40%,#FD5C5A );
+        position:absolute;
+    }
+    
+   </style>
+       
+</head>
+<body>
+
+    <h1>
+    Torrevieja 
+    </h1>
+
+    <h2>
+    <strong><em>- the place to be</em></strong> 🌞
+    </h2>
+    <p>
+    <strong>Torrevieja lies about 50 kilometres south of the city of<span style="color:#FD5C5A"> Alicante.</span> </br>
+    Torrevieja was originally a salt-mining and fishing village as it is located </br>
+    between the sea and two large salt lakes (Las Salinas, a pink lake), </br>
+    which gives <span style="color:#FD5C5A">Torrevieja healthy microclimate.</span></strong> </br>
+    </p>
+    
+    <div class="shadowbox">
+        <p style="color:white"> Did you know that Torrevieja has 320 days of sunshine per year? </p>
+    </div>
+   
+    <p style="text-align:center;"><a href= "https://en.wikipedia.org/wiki/Torrevieja"target="blank"><font color="#4CC2C0" >
+
+    Learn more on Wikipedia
+</a>
+</p>
+<img src="https://i.pinimg.com/originals/32/21/3a/32213a046e42bc4655b2042a6f7092fa.jpg" width="280"/>
+
+</br>
+</br>
+<button>
+    <strong>Want to visit?</strong>
+</button>
+<HR width="50%" ALIGN="center" noshade color="#FD5C5A" size="6">
+
+<script>
+
+    function travel() {
+        let planing = prompt("Are you planing a trip to Spain?")
+        .trim()
+        .toLowerCase();
+        let name = prompt("What is your name?");
+
+        let heading = document.querySelector("h1");
+        if (planing === "yes"){
+            heading.innerHTML = " 😀 <br /> Hi" + " " + name + "," +" "+ "Welcome to Spain!"; 
+
+        } else {
+        alert ("😥Another time then");
+        
+    }
+    }
+
+    let visitButton = document.querySelector("button");
+    visitButton.addEventListener("click", travel);
+    
+  
+</script>
+
+
+</body>
+</html>
